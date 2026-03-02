@@ -28,29 +28,33 @@ public class PracticeProblem {
         Scanner input = new Scanner(System.in);
 	    char bool1;
 		char bool2;
-	    System.out.print("input a lowerace:");
+	    System.out.print("Input a lowercase letter: ");
 		bool1=input.next().charAt(0);
-		System.out.print("input an another lowerace:");
+		System.out.print("Input another lowercase letter: ");
 		bool2=input.next().charAt(0);
-		System.out.println(bool1>bool2 && bool2 < bool1);
+		System.out.println(bool1<bool2);
 		//Write question 2 code here
 	}
 
+	
+	
+	
+	
 	public static void q3() {
 		 Scanner input = new Scanner(System.in);
-		 int bool1;
-		 System.out.print("input a number:");
-		 bool1=input.nextInt();
-		 System.out.println(0<bool1&&bool1<10);
+		 double bool1;
+		 System.out.print("Input a number: ");
+		 bool1=input.nextDouble();
+		 System.out.println(0<=bool1&&bool1<=10);
 		//Write question 3 code here
 	}
 
 	public static void q4() {
-		Scanner input = new Scanner(System.in);
-		int bool1;
-		System.out.print("input a number:");
-		bool1=input.nextInt();
-		System.out.println(!(bool1<0 || bool1==5));
+		Scanner scanner = new Scanner(System.in);
+		double bool1;
+		System.out.print("Input a number: ");
+		bool1=scanner.nextDouble();
+		System.out.println(bool1 > 0 && bool1!=5);
 		//Write question 4 code here
 	}
 
@@ -59,9 +63,9 @@ public class PracticeProblem {
 		String word1;
         String banana1;
 		banana1="banana";
-		System.out.print("Input a word:");
+		System.out.print("Input a word: ");
 		word1=input.nextLine();
-		System.out.println(word1==banana1);
+		System.out.println(!(word1.equals("banana")));
 
 
 		//Write question 5 code here
@@ -71,9 +75,9 @@ public class PracticeProblem {
 		Scanner input = new Scanner(System.in);
 		int number1;
 		int number2;
-		System.out.print("Input a number:");
+		System.out.print("Enter an integer: ");
 		number1=input.nextInt();
-		System.out.println(number1%2==0);
+		System.out.println("The integer "+number1+" is "+(number1%2==0));
 		//Write question 6 code here
 	}
 
